@@ -1,4 +1,4 @@
-package com.tutorial.firstproblem;
+package com.tutorial.FirstProblem;
 
 import org.junit.Assert;
 import org.junit.Before;
@@ -25,6 +25,7 @@ public class FirstProblemTest {
 
         Assert.assertEquals(expectedResult, actualResult);
     }
+
     @Test
     public void testGetStrayNumberSecond() {
         int[] array = {2, 1, 2};
@@ -34,6 +35,7 @@ public class FirstProblemTest {
 
         Assert.assertEquals(expectedResult, actualResult);
     }
+
     @Test
     public void testGetStrayNumberLast() {
         int[] array = {2, 2, 1};

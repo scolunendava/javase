@@ -1,4 +1,4 @@
-package com.tutorial.firstproblem;
+package com.tutorial.FirstProblem;
 
 
 /**
@@ -17,19 +17,6 @@ package com.tutorial.firstproblem;
 public class FirstProblem {
 
         public int getStrayNumber(int[] array) {
-
-//            int m = array[0];
-//            int n = array[1];
-//           int count=0;
-//            int count2=0;
-//
-//            for (int i = 1; i < array.length; i++) {
-//                if (m!=array[i]) {
-//                    count++;
-//               }
-//            if ()
-////
-////            }
 
             int number = array[0];
 
