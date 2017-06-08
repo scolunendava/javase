@@ -4,6 +4,8 @@ import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
 
+import static org.junit.Assert.assertEquals;
+
 public class SquareNumberTest {
 
     private SquareNumber squareNumber;
@@ -23,7 +25,7 @@ public class SquareNumberTest {
         int result = squareNumber.square(numberToSquare);
 
         //assert
-        Assert.assertEquals(expectedResult, result);
+        assertEquals(expectedResult, result);
     }
 
     @Test
@@ -33,7 +35,7 @@ public class SquareNumberTest {
 
         int result = squareNumber.square(numberToSquare);
 
-        Assert.assertEquals(expectedResult, result);
+        assertEquals(expectedResult, result);
     }
 
     @Test
@@ -43,7 +45,7 @@ public class SquareNumberTest {
 
         int result = squareNumber.square(numberToSquare);
 
-        Assert.assertEquals(expectedResult, result);
+       assertEquals(expectedResult, result);
     }
 
 }
