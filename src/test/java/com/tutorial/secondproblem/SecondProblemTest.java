@@ -1,4 +1,4 @@
-package com.tutorial.SecondProblem;
+package com.tutorial.secondproblem;
 
 import org.junit.Before;
 import org.junit.Test;

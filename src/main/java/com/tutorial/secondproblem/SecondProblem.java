@@ -1,4 +1,4 @@
-package com.tutorial.SecondProblem;
+package com.tutorial.secondproblem;
 
 
 /*A digital root is the recursive sum of all
@@ -16,11 +16,9 @@ public class SecondProblem {
         while (number > 0) {
             sum += (number % 10);
             number = number / 10;
-
         }
         number = sum;
             sum =0;
-
         }
 
         return (number);
