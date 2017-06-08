@@ -2,6 +2,7 @@ package com.tutorial.secondproblem;
 
 import org.junit.Before;
 import org.junit.Test;
+
 import static org.junit.Assert.assertEquals;
 
 /*
@@ -23,7 +24,7 @@ public class SecondProblemTest {
 
         int actualResult = secondProblem.getSum(number);
 
-        assertEquals(expectedResult,actualResult);
+        assertEquals(expectedResult, actualResult);
     }
 
     @Test
@@ -33,6 +34,6 @@ public class SecondProblemTest {
 
         int actualResult = secondProblem.getSum(number);
 
-        assertEquals(expectedResult,actualResult);
+        assertEquals(expectedResult, actualResult);
     }
 }
