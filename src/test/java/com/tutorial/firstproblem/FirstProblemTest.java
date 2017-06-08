@@ -1,8 +1,11 @@
-package com.tutorial.firstproblem;
+package com.tutorial.FirstProblem;
 
-import org.junit.Assert;
+import com.tutorial.firstproblem.FirstProblem;
 import org.junit.Before;
 import org.junit.Test;
+
+import static org.junit.Assert.assertEquals;
+
 
 /**
  * Created by dandrunakievich on 6/7/2017.
@@ -23,8 +26,9 @@ public class FirstProblemTest {
 
         int actualResult = firstProblem.getStrayNumber(array);
 
-        Assert.assertEquals(expectedResult, actualResult);
+        assertEquals(expectedResult, actualResult);
     }
+
     @Test
     public void testGetStrayNumberSecond() {
         int[] array = {2, 1, 2};
@@ -32,8 +36,9 @@ public class FirstProblemTest {
 
         int actualResult = firstProblem.getStrayNumber(array);
 
-        Assert.assertEquals(expectedResult, actualResult);
+        assertEquals(expectedResult, actualResult);
     }
+
     @Test
     public void testGetStrayNumberLast() {
         int[] array = {2, 2, 1};
@@ -41,6 +46,6 @@ public class FirstProblemTest {
 
         int actualResult = firstProblem.getStrayNumber(array);
 
-        Assert.assertEquals(expectedResult, actualResult);
+        assertEquals(expectedResult, actualResult);
     }
 }
