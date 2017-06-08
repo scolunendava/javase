@@ -1,6 +1,5 @@
 package com.tutorial.initproject;
 
-import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
 
@@ -45,7 +44,7 @@ public class SquareNumberTest {
 
         int result = squareNumber.square(numberToSquare);
 
-       assertEquals(expectedResult, result);
+        assertEquals(expectedResult, result);
     }
 
 }
