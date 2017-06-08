@@ -4,7 +4,7 @@ import org.junit.Before;
 import org.junit.Test;
 import static org.junit.Assert.assertEquals;
 
-/**
+/*
  * Created by dandrunakievich on 6/8/2017.
  */
 public class SecondProblemTest {
