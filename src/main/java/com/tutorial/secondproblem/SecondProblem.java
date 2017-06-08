@@ -9,19 +9,20 @@ package com.tutorial.secondproblem;
  */
 public class SecondProblem {
 
-    public static int getSum(int number) {
+    public int getSum(int number) {
 
         int sum = 0;
-        while ((number/10)!=0){
-        while (number > 0) {
-            sum += (number % 10);
-            number = number / 10;
+        int mid = number;
+        while ((mid/10)!=0){
+        while (mid > 0) {
+            sum += (mid % 10);
+            mid = mid / 10;
         }
-        number = sum;
+        mid = sum;
             sum =0;
         }
 
-        return (number);
+        return (mid);
     }
 
 }
