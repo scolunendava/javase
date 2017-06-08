@@ -1,9 +1,7 @@
-package com.tutorial.FirstProblem;
+package com.tutorial.firstproblem;
 
-import com.tutorial.firstproblem.FirstProblem;
 import org.junit.Before;
 import org.junit.Test;
-
 import static org.junit.Assert.assertEquals;
 
 
