@@ -18,7 +18,7 @@ public class SecondProblemTest {
 
     @Test
     public void testGetSumFirst() {
-        int number = 3456789;
+        final int number = 3456789;
         int expectedResult = 6;
 
         int actualResult = secondProblem.getSum(number);
@@ -28,7 +28,7 @@ public class SecondProblemTest {
 
     @Test
     public void testGetSumSecond() {
-        int number = 1234;
+        final int number = 1234;
         int expectedResult = 1;
 
         int actualResult = secondProblem.getSum(number);
