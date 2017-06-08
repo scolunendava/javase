@@ -9,7 +9,7 @@ package com.tutorial.secondproblem;
  */
 public class SecondProblem {
 
-    public int getSum(int number) {
+    public int getSum(final int number) {
 
         int sum = 0;
         int mid = number;
