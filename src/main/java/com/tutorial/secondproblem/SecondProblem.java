@@ -12,17 +12,17 @@ public class SecondProblem {
     public int getSum(final int number) {
 
         int sum = 0;
-        int mid = number;
-        while ((mid / 10) != 0) {
-            while (mid > 0) {
-                sum += (mid % 10);
-                mid = mid / 10;
+        int digitalRoot = number;
+        while ((digitalRoot / 10) != 0) {
+            while (digitalRoot > 0) {
+                sum += (digitalRoot % 10);
+                digitalRoot = digitalRoot / 10;
             }
-            mid = sum;
+            digitalRoot = sum;
             sum = 0;
         }
 
-        return (mid);
+        return (digitalRoot);
     }
 
 }
