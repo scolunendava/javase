@@ -11,19 +11,17 @@ import static org.junit.Assert.assertEquals;
 /**
  * Created by dandrunakievich on 6/9/2017.
  */
+
 public class ThirdProblemTest {
     private ThirdProblem thirdproblem;
-
-
     @Before
-
     public void setUp() {
         thirdproblem = new ThirdProblem();
     }
 
     @Test
     public void testGetUniqueNumbers() {
-        int[] array = {1, 2, 3, 4, 1, 2, 5, 4, 0};
+        Integer[] array = {1, 2, 3, 4, 1, 2, 5, 4, 0};
         Set<Integer> expectedResult = new HashSet<>();
         expectedResult.add(new Integer("0"));
         expectedResult.add(new Integer("1"));
@@ -32,14 +30,13 @@ public class ThirdProblemTest {
         expectedResult.add(new Integer("4"));
         expectedResult.add(new Integer("5"));
 
-
-        Set<Integer> actualResult = thirdproblem.getunique(array);
+        Set<Integer> actualResult = thirdproblem.getUnique( array);
         assertEquals(expectedResult, actualResult);
     }
 
     @Test
     public void testGetUniqueNumberSecond() {
-        int[] array = {11, 23, 11, 54, 678, 6, 54};
+        Integer[] array = {11, 23, 11, 54, 678, 6, 54};
         Set<Integer> expectedResult = new HashSet<Integer>();
         expectedResult.add(new Integer("11"));
         expectedResult.add(new Integer("23"));
@@ -47,7 +44,7 @@ public class ThirdProblemTest {
         expectedResult.add(new Integer("678"));
         expectedResult.add(new Integer("6"));
 
-        Set<Integer> actualResult = thirdproblem.getunique(array);
+        Set<Integer> actualResult = thirdproblem.getUnique(array);
         assertEquals(expectedResult, actualResult);
     }
 }
