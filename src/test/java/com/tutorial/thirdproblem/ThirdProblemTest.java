@@ -14,6 +14,7 @@ import static org.junit.Assert.assertEquals;
 
 public class ThirdProblemTest {
     private ThirdProblem thirdproblem;
+
     @Before
     public void setUp() {
         thirdproblem = new ThirdProblem();
@@ -30,7 +31,7 @@ public class ThirdProblemTest {
         expectedResult.add(new Integer("4"));
         expectedResult.add(new Integer("5"));
 
-        Set<Integer> actualResult = thirdproblem.getUnique( array);
+        Set<Integer> actualResult = thirdproblem.getUnique(array);
         assertEquals(expectedResult, actualResult);
     }
 
