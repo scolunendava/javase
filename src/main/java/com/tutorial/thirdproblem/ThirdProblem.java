@@ -13,9 +13,7 @@ public class ThirdProblem {
 
     public Set<Integer> getUnique(Integer[] array) {
         Set<Integer> numbers = new HashSet<Integer>(Arrays.asList(array));
-        //for (int i = 0; i < array.length; i++) {
-         //   numbers.add(array[i]);
-       // }
+
         return numbers;
     }
 
