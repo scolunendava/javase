@@ -1,7 +1,11 @@
 package com.tutorial.fourthproblem;
 
+import java.security.cert.CollectionCertStoreParameters;
+import java.util.Arrays;
 import java.util.HashMap;
 import java.util.Map;
+import java.util.function.Function;
+import java.util.stream.Collectors;
 
 /*Given an array of strings, return a Map<String, Integer>
 containing a key for every different string in the array, and the value is that string's length.
@@ -11,20 +15,25 @@ wordLen(["this", "and", "that", "and"]) → {"that": 4, "and": 3, "this": 4}
 wordLen(["code", "code", "code", "bug"]) → {"code": 4, "bug": 3}
 
  */
+
 public class FourthProblem {
 
 
     public Map<String, Integer> getWordsLength(String[] words) {
 
-        Map<String, Integer> result = new HashMap<>();
+       // Map<String, Integer> result = new HashMap<>();
 
-        for (String word : words) {
+        /*for (String word : words) {
 
             result.put(word, word.length());
 
-        }
+        }*/
 
-        return result;
+        return Arrays.stream(words)
+                .collect(Collectors.toMap(w -> w,
+                        String::length, (e1, e2) -> e1));
+
+        //return result;
     }
 
 }
