@@ -1,7 +1,5 @@
 package com.tutorial.fiveproblem;
 
-import java.util.List;
-
 /*Create a class structure to implement structure of a company and it’s employees.
 
 Company should contain data about it’s name, date of foundation,
@@ -11,6 +9,7 @@ Employee should contain personal data, home address,
  all phone numbers, job name, salary, date of employment.
 
  */
+
 public class Employee {
 
     private String homeAddress;
@@ -21,7 +20,5 @@ public class Employee {
     private String homeNumber;
     private String mobileNumber;
     private String companyName;
-
-
 
 }

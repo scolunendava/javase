@@ -11,13 +11,15 @@ Employee should contain personal data, home address, all phone
  numbers, job name, salary, date of employment.
 
  */
+
 public class Company {
-   private String name;
-   private String dateOfFoundation;
-   private String director;
-   private String domainOfSpecialization;
-   private String address;
-   List<Company> partners;
-   List<Employee> employees;
-   Contact contact;
+    private String name;
+    private String dateOfFoundation;
+    private String director;
+    private String domainOfSpecialization;
+    private String address;
+
+    List<Company> partners;
+    List<Employee> employees;
+    Contact contact;
 }

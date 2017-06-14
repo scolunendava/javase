@@ -9,6 +9,7 @@ Employee should contain personal data, home address,
  all phone numbers, job name, salary, date of employment.
 
  */
+
 public class Contact {
     private String phone;
     private String fax;
