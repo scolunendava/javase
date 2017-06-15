@@ -1,5 +1,7 @@
 package com.tutorial.fiveproblem;
 
+import java.util.Date;
+
 /**
  * Created by dandrunakievich on 6/15/2017.
  */
@@ -16,7 +18,7 @@ public class PersonalData {
 
     private String firstName;
     private String lastName;
-    private String dateOfBirth;
+    private Date dateOfBirth;
     private String sex;
     private String address;
     private Contact contact;
@@ -37,11 +39,11 @@ public class PersonalData {
         this.lastName = lastName;
     }
 
-    public String getDateOfBirth() {
+    public Date getDateOfBirth() {
         return dateOfBirth;
     }
 
-    public void setDateOfBirth(String dateOfBirth) {
+    public void setDateOfBirth(Date dateOfBirth) {
         this.dateOfBirth = dateOfBirth;
     }
 

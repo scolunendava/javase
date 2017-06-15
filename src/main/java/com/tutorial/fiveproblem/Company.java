@@ -1,6 +1,7 @@
 package com.tutorial.fiveproblem;
 
 import java.util.ArrayList;
+import java.util.Date;
 import java.util.List;
 
 /*Create a class structure to implement structure of a company and it’s employees.
@@ -15,7 +16,7 @@ Employee should contain personal data, home address, all phone
 
 public class Company {
 
-    private String dateOfFoundation;
+    private Date dateOfFoundation;
     private String domainOfSpecialization;
     private String address;
     private List<Company> partners = new ArrayList<>();
@@ -31,11 +32,11 @@ public class Company {
         this.name = name;
     }
 
-    public String getDateOfFoundation() {
+    public Date getDateOfFoundation() {
         return dateOfFoundation;
     }
 
-    public void setDateOfFoundation(String dateOfFoundation) {
+    public void setDateOfFoundation(Date dateOfFoundation) {
         this.dateOfFoundation = dateOfFoundation;
     }
 

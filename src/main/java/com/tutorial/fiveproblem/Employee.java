@@ -10,13 +10,14 @@ Employee should contain personal data, home address,
 
  */
 
+import java.util.Date;
+
 public class Employee {
 
     private String salary;
     private String jobName;
-    private String dateOfEmployment;
+    private Date dateOfEmployment;
     private Company companyName;
-    private Contact contact;
     private PersonalData personalData;
 
     public String getSalary() {
@@ -35,11 +36,11 @@ public class Employee {
         this.jobName = jobName;
     }
 
-    public String getDateOfEmployment() {
+    public Date getDateOfEmployment() {
         return dateOfEmployment;
     }
 
-    public void setDateOfEmployment(String dateOfEmployment) {
+    public void setDateOfEmployment(Date dateOfEmployment) {
         this.dateOfEmployment = dateOfEmployment;
     }
 
@@ -49,14 +50,6 @@ public class Employee {
 
     public void setCompanyName(Company companyName) {
         this.companyName = companyName;
-    }
-
-    public Contact getContact() {
-        return contact;
-    }
-
-    public void setContact(Contact contact) {
-        this.contact = contact;
     }
 
     public PersonalData getPersonalData() {
