@@ -1,10 +1,8 @@
 package com.tutorial.fourthproblem;
 
-import java.security.cert.CollectionCertStoreParameters;
 import java.util.Arrays;
 import java.util.HashMap;
 import java.util.Map;
-import java.util.function.Function;
 import java.util.stream.Collectors;
 
 /*Given an array of strings, return a Map<String, Integer>
@@ -21,19 +19,21 @@ public class FourthProblem {
 
     public Map<String, Integer> getWordsLength(String[] words) {
 
-       // Map<String, Integer> result = new HashMap<>();
+        Map<String, Integer> result = new HashMap<>();
 
-        /*for (String word : words) {
+        for (String word : words) {
 
             result.put(word, word.length());
 
-        }*/
+        }
 
+        return result;
+    }
+
+    public Map<String, Integer> getWordsLengthSecond(String[] words) {
         return Arrays.stream(words)
-                .collect(Collectors.toMap(w -> w,
-                        String::length, (e1, e2) -> e1));
+                .collect(Collectors.toMap((String w) -> w, String::length, (e1, e2) -> e1));
 
-        //return result;
     }
 
 }

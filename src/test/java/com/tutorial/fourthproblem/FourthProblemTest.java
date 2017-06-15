@@ -34,4 +34,19 @@ public class FourthProblemTest {
         assertEquals(expectedResult, actualResult);
 
     }
+
+    @Test
+    public void testGetWordsLengthSecond() {
+        String[] array = {"aaab", "words", "words", "bbb", "aaab"};
+
+        Map<String, Integer> expectedResult = new HashMap<>();
+        expectedResult.put("aaab", 4);
+        expectedResult.put("words", 5);
+        expectedResult.put("bbb", 3);
+
+        Map<String, Integer> actualResult = fourthproblem.getWordsLengthSecond(array);
+
+        assertEquals(expectedResult, actualResult);
+
+    }
 }
