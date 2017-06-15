@@ -15,6 +15,15 @@ import java.util.Date;
         */
 
 public class PersonalData {
+    public static void main(String[] args) {
+        PersonalData personalData = new PersonalData();
+    }
+
+
+    private enum Sex {Male, Female}
+
+    String name = "sex";
+    Sex sexEnum = Sex.valueOf(name);
 
     private String firstName;
     private String lastName;

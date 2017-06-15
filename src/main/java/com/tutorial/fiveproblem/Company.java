@@ -15,6 +15,10 @@ Employee should contain personal data, home address, all phone
  */
 
 public class Company {
+    private enum DomainOfSpecialization{Director, Engineer,Bookkeeper,TeamLider}
+    String name1="DomainOfSoecialization";
+    DomainOfSpecialization domainOfSpecializationEnum = DomainOfSpecialization.valueOf(name1);
+
 
     private Date dateOfFoundation;
     private String domainOfSpecialization;
