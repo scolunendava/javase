@@ -16,15 +16,10 @@ import java.util.Date;
 
 public class PersonalData {
 
-    private enum Sex {Male, Female}
-
-    String name = "sex";
-    Sex sexEnum = Sex.valueOf(name);
-
     private String firstName;
     private String lastName;
     private Date dateOfBirth;
-    private String sex;
+    private Sex sex;
     private String address;
     private Contact contact;
 
@@ -52,11 +47,11 @@ public class PersonalData {
         this.dateOfBirth = dateOfBirth;
     }
 
-    public String getSex() {
+    public Sex getSex() {
         return sex;
     }
 
-    public void setSex(String sex) {
+    public void setSex(Sex sex) {
         this.sex = sex;
     }
 
