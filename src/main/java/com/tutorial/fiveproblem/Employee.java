@@ -12,13 +12,59 @@ Employee should contain personal data, home address,
 
 public class Employee {
 
-    private String homeAddress;
-    private String personalData;
+
     private String salary;
     private String jobName;
     private String dateOfEmployment;
-    private String homeNumber;
-    private String mobileNumber;
-    private String companyName;
+    private Company companyName;
+    private Contact contact;
+    private PersonalData personalData;
 
+    public String getSalary() {
+        return salary;
+    }
+
+    public void setSalary(String salary) {
+        this.salary = salary;
+    }
+
+    public String getJobName() {
+        return jobName;
+    }
+
+    public void setJobName(String jobName) {
+        this.jobName = jobName;
+    }
+
+    public String getDateOfEmployment() {
+        return dateOfEmployment;
+    }
+
+    public void setDateOfEmployment(String dateOfEmployment) {
+        this.dateOfEmployment = dateOfEmployment;
+    }
+
+    public Company getCompanyName() {
+        return companyName;
+    }
+
+    public void setCompanyName(Company companyName) {
+        this.companyName = companyName;
+    }
+
+    public Contact getContact() {
+        return contact;
+    }
+
+    public void setContact(Contact contact) {
+        this.contact = contact;
+    }
+
+    public PersonalData getPersonalData() {
+        return personalData;
+    }
+
+    public void setPersonalData(PersonalData personalData) {
+        this.personalData = personalData;
+    }
 }
