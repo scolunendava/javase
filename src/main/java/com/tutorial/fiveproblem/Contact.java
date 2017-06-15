@@ -11,6 +11,7 @@ Employee should contain personal data, home address,
  */
 
 public class Contact {
+
     private String phone;
     private String fax;
     private String mobilePhone;

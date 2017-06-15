@@ -18,7 +18,6 @@ public class Company {
     private String dateOfFoundation;
     private String domainOfSpecialization;
     private String address;
-
     private List<Company> partners = new ArrayList<>();
     private List<Employee> employees = new ArrayList<>();
     private Contact contact;

@@ -12,7 +12,6 @@ Employee should contain personal data, home address,
 
 public class Employee {
 
-
     private String salary;
     private String jobName;
     private String dateOfEmployment;
