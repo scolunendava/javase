@@ -16,4 +16,12 @@ public enum SexEnum {
     public String getDescription() {
         return description;
     }
+    public SexEnum findByDesc(String description){
+        for(SexEnum v : SexEnum.values()){
+            if(v.getDescription().equals(description)){
+                return v;
+            }
+        }
+        return null;
+    }
 }

@@ -19,5 +19,13 @@ public enum SpecializationEnum {
     public String getAbbreviation() {
         return abbreviation;
     }
+    public SpecializationEnum findByAbbr(String abbreviation) {
+        for (SpecializationEnum v : SpecializationEnum.values()) {
+            if (v.getAbbreviation().equals(abbreviation)) {
+                return v;
+            }
+        }
+        return null;
+    }
 }
 
