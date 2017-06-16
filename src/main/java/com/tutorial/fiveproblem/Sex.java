@@ -5,6 +5,15 @@ package com.tutorial.fiveproblem;
  */
 public enum Sex {
 
-    MASCULINE,
-    FEMININE
+    M("Masculine"),
+    F("Feminine");
+    String description;
+
+    Sex(String description){
+        this.description = description;
+    }
+
+    public String getDescription() {
+        return description;
+    }
 }

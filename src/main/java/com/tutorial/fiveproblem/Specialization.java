@@ -7,5 +7,6 @@ public enum Specialization {
     DIRECTOR,
     ENGINEER,
     MANAGER,
-    BOOKKEEPER
+    BOOKKEEPER;
+
 }
