@@ -17,7 +17,7 @@ Employee should contain personal data, home address, all phone
 public class Company {
 
     private Date dateOfFoundation;
-    private Specialization domainOfSpecialization;
+    private SpecializationEnum domainOfSpecialization;
     private String address;
     private List<Company> partners = new ArrayList<>();
     private List<Employee> employees = new ArrayList<>();
@@ -40,11 +40,11 @@ public class Company {
         this.dateOfFoundation = dateOfFoundation;
     }
 
-    public Specialization getDomainOfSpecialization() {
+    public SpecializationEnum getDomainOfSpecialization() {
         return domainOfSpecialization;
     }
 
-    public void setDomainOfSpecialization(Specialization domainOfSpecialization) {
+    public void setDomainOfSpecialization(SpecializationEnum domainOfSpecialization) {
         this.domainOfSpecialization = domainOfSpecialization;
     }
 

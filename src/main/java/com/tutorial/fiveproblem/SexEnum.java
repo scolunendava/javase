@@ -3,13 +3,13 @@ package com.tutorial.fiveproblem;
 /**
  * Created by dandrunakievich on 6/15/2017.
  */
-public enum Sex {
+public enum SexEnum {
 
-    M("Masculine"),
-    F("Feminine");
-    String description;
+    MALE("M"),
+    FEMALE("F");
+    private String description;
 
-    Sex(String description){
+    SexEnum(String description){
         this.description = description;
     }
 
