@@ -19,7 +19,7 @@ public class PersonalData {
     private String firstName;
     private String lastName;
     private Date dateOfBirth;
-    private String sex;
+    private SexEnum sex;
     private String address;
     private Contact contact;
 
@@ -47,11 +47,11 @@ public class PersonalData {
         this.dateOfBirth = dateOfBirth;
     }
 
-    public String getSex() {
+    public SexEnum getSex() {
         return sex;
     }
 
-    public void setSex(String sex) {
+    public void setSex(SexEnum sex) {
         this.sex = sex;
     }
 
