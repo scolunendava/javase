@@ -1,6 +1,6 @@
 package com.tutorial.sixthproblem;
 
-public class Audi implements Run {
+public class Audi implements Automobile {
 
     @Override
     public void runs() {
