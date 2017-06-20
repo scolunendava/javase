@@ -3,13 +3,8 @@ package com.tutorial.sixthproblem;
 /**
  * Created by dandrunakievich on 6/20/2017.
  */
-public class Automobile implements Run {
-
-public void runs(){
-        }
+public interface Run {
+     void runs();
 
 
-        }
-
-
-
+}
