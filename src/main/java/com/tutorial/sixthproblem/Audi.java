@@ -1,7 +1,6 @@
 package com.tutorial.sixthproblem;
 
-
-public class Audi extends Automobile {
+public class Audi implements Run {
 
     @Override
     public void runs() {
@@ -10,6 +9,5 @@ public class Audi extends Automobile {
 
     public int runs(int km) {
         return 150 + km;
-
     }
 }

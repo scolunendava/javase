@@ -5,7 +5,7 @@ package com.tutorial.sixthproblem;
  */
 public class Main {
     public static void main(String[]args){
-        Automobile[]a=new Automobile[]{new Automobile(),new Audi(),new BMW()};
+        Run[]a=new Run[]{new Audi(),new BMW()};
 
         for(int i=0;i<a.length;i++){
             a[i].runs();
