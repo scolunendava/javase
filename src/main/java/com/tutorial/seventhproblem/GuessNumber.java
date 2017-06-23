@@ -7,10 +7,10 @@ import java.util.Scanner;
 /**
  * Created by dandrunakievich on 6/22/2017.
  */
-public class guessNumber {
-    public static void guess() {
+public class GuessNumber {
+    public static void Guess() {
         Random rand = new Random();
-        int randomnumber = rand.nextInt(100) + 1;
+        int randomNumber = rand.nextInt(100) + 1;
         System.out.println("You are guessing a number. Input a number from 1 to 100: ");
 
         Scanner sc = new Scanner(System.in);
@@ -25,26 +25,23 @@ public class guessNumber {
             }
 
             if (number < 1 || number > 100) {
-                System.out.println("Bad input");
+                System.out.println("Wrong number. Use numbers from 1 to 100.");
                 continue;
             }
 
-            if (number != randomnumber) {
-                if (number > randomnumber) {
-                    System.out.println("Number is less. Try again:");
-                    continue;
-                } else {
-                    System.out.println("Number is more. Try again:");
-                    continue;
-                }
+            if (number > randomNumber) {
+                System.out.println("Number is less. Try again:");
+                continue;
             } else {
-                System.out.println("You Win. Game over.");
+                System.out.println("Number is more. Try again:");
+                continue;
             }
         }
-        while (number != randomnumber);
+        while (number != randomNumber);
+        System.out.println("You Win. Game over.");
     }
 
     public static void main(String[] args) {
-        guess();
+        Guess();
     }
 }
