@@ -11,6 +11,7 @@ public class GuessNumber {
     public static void Guess() {
         Random rand = new Random();
         int randomNumber = rand.nextInt(100) + 1;
+        System.out.println(randomNumber);
         System.out.println("You are guessing a number. Input a number from 1 to 100: ");
 
         Scanner sc = new Scanner(System.in);
@@ -32,7 +33,7 @@ public class GuessNumber {
             if (number > randomNumber) {
                 System.out.println("Number is less. Try again:");
                 continue;
-            } else {
+            } else if (number < randomNumber){
                 System.out.println("Number is more. Try again:");
                 continue;
             }
