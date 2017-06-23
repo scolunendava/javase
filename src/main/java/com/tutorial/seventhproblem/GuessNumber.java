@@ -8,10 +8,9 @@ import java.util.Scanner;
  * Created by dandrunakievich on 6/22/2017.
  */
 public class GuessNumber {
-    public static void Guess() {
+    public static void guess() {
         Random rand = new Random();
         int randomNumber = rand.nextInt(100) + 1;
-        System.out.println(randomNumber);
         System.out.println("You are guessing a number. Input a number from 1 to 100: ");
 
         Scanner sc = new Scanner(System.in);
@@ -43,6 +42,6 @@ public class GuessNumber {
     }
 
     public static void main(String[] args) {
-        Guess();
+        guess();
     }
 }
