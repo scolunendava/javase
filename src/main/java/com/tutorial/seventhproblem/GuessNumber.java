@@ -25,7 +25,7 @@ public class GuessNumber {
                 continue;
             }
 
-            if (number < 1 || number > 100) {
+            if (number < 1 && number > 100) {
                 System.out.println("Wrong number. Use numbers from 1 to 100.");
                 continue;
             }
